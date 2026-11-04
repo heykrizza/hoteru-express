@@ -10,7 +10,7 @@
     "check": "biome check",
     "fix": "biome check --write",
     "test": "vitest",
-    "ci": "pnpm checktypes && pnpm check && pnpm test run"
+    "test:ci": "pnpm checktypes && pnpm check && pnpm test run"
   },
   "dependencies": {
     "express": "5.3.0"
