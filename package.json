@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "PORT=3001 node --watch src/app.ts",
-    "prd": "node src/app.ts",
+    "dev": "PORT=3001 node --watch src/server.ts",
+    "prd": "node src/server.ts",
     "checktypes": "tsc --noEmit",
     "check": "biome check",
     "fix": "biome check --write",
