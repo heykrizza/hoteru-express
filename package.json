@@ -1,0 +1,37 @@
+{
+  "name": "hoteru",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "PORT=3001 node --watch src/app.ts",
+    "prd": "node src/app.ts",
+    "checktypes": "tsc --noEmit",
+    "check": "biome check",
+    "fix": "biome check --write",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "express": "5.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.4",
+    "@types/express": "5.0.6",
+    "@types/node": "26.6.6",
+    "@types/supertest": "7.2.1",
+    "supertest": "7.3.1",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.16.1",
+      "onFail": "error"
+    }
+  },
+  "engines": {
+    "node": ">=26"
+  },
+  "packageManager": "pnpm@12.16.1"
+}
